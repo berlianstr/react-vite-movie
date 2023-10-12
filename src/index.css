@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Patrick+Hand&family=Poppins:wght@400;500;600;700&family=Source+Code+Pro&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  /* background-image: url(../src/assets/images/op-img.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  width: 100vw;
+}
+.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+.lazy-load-image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.heroBannerContent {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.navbar {
+  position: fixed;
+  transform: translateY(10);
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.5s;
+  z-index: 2;
+  padding: 40px 60px 40px 60px;
+}
+.navbar-top {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+.navbar-show {
+  background-color: #020c1b;
+}
+.navbar-hide {
+  transform: translateY(-70px);
+}
