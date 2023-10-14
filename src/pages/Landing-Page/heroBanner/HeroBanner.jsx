@@ -6,7 +6,7 @@ export default function HeroBanner({ image }) {
   return (
     <>
       <section
-        className="relative flex flex-col min-h-screen bg-slate-800 text-white bg-center bg-cover bg-blend-overlay bg-fixed bg-black/30 px-[60px] py-10"
+        className="relative flex flex-col min-h-screen bg-slate-800 text-white bg-center bg-cover bg-blend-overlay bg-fixed bg-black/30 md:px-[60px] px-4 py-12 xl:pt-0 lg:pt-24"
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/w500${image})`,
         }}
@@ -14,7 +14,7 @@ export default function HeroBanner({ image }) {
         {!window.location.pathname.includes("/details") && (
           <>
             <div className="flex flex-1  justify-center items-end">
-              <p className="text-center font-bold text-5xl">
+              <p className="text-center font-bold md:text-5xl text-3xl">
                 Laughter. Tears. Thrills. Find it all on Film.Id <br />
                 <span className="text-sm font-normal">
                   Explore the magic of movies like never before on our immersive

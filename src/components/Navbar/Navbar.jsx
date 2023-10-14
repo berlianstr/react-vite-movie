@@ -40,17 +40,19 @@ export default function Navbar() {
     }
   };
   return (
-    <div className={`navbar navbar-${show}`}>
-      <p
-        className="text-white text-[42px] font-semibold italic cursor-pointer"
-        onClick={() => {
-          navigate("/");
-          setQuery("");
-        }}
-      >
-        FILM.ID
-      </p>
-      <div className="flex justify-end w-full gap-[42px]">
+    <div className={`flex justify-between navbar navbar-${show}  `}>
+      <div className="md:block hidden w-2/12">
+        <p
+          className="text-white text-[42px] font-semibold italic cursor-pointer"
+          onClick={() => {
+            navigate("/");
+            setQuery("");
+          }}
+        >
+          FILM.ID
+        </p>
+      </div>
+      <div className="md:flex hidden xl:w-full lg:w-6/12 justify-end  gap-[42px]">
         <InputSearch
           className={"bg-transparent"}
           placeholder={"Search your favourites"}
@@ -58,6 +60,14 @@ export default function Navbar() {
           handleOnChange={(e) => setQuery(e.target.value)}
         />
         <img src={imgUser} alt="user-image" />
+      </div>
+      <div className="md:hidden  w-full block">
+        <InputSearch
+          className={"bg-transparent"}
+          placeholder={"Search your favourites"}
+          onKeyUp={searchQueryHandler}
+          handleOnChange={(e) => setQuery(e.target.value)}
+        />
       </div>
     </div>
   );

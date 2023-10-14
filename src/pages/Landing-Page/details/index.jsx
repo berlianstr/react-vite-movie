@@ -13,9 +13,9 @@ export default function Details() {
   const modelDetails = useDetailsPageViewModel();
 
   return (
-    <div className="details-page ">
+    <div className="details-page overflow-hidden">
       <HeroBanner image={modelDetails?.data?.backdrop_path} />
-      <div className="menu px-[60px] flex flex-col gap-[60px] min-h-screen bg-black pt-[52px]">
+      <div className="menu md:x-[60px] px-4 flex flex-col gap-[60px] min-h-screen bg-black pt-[52px]">
         <Overview item={modelDetails.data} itemCast={modelDetails.cast} />
         <Review />
         <Trending data={modelLanding.data} />

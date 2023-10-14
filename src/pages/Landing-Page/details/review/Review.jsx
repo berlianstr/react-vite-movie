@@ -5,7 +5,7 @@ export default function Review() {
   return (
     <div className="text-white">
       <p className="text-[32px] font-bold">Reviews</p>
-      <div className="grid grid-cols-2 gap-[54px] mt-[30px]">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-[54px] mt-[30px]">
         <div className="bg-[#3A3A3A] rounded-xl p-6">
           <div className="flex items-center gap-[15px]">
             <UserCircle size={42} />{" "}

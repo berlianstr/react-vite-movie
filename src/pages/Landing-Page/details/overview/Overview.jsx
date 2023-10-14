@@ -5,7 +5,7 @@ import { BookmarkIcon, PlayIcon } from "lucide-react";
 export default function Overview({ item, itemCast }) {
   const date = new Date(item?.release_date);
   return (
-    <div className="flex gap-8 w-full text-white">
+    <div className="flex md:flex-row flex-col gap-8 w-full text-white">
       <img
         src={`https://image.tmdb.org/t/p/w500${item?.poster_path}`}
         className="rounded-[20px] w-3/12"

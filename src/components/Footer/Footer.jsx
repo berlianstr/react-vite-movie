@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="footer  h-auto  px-[60px] bg-black py-[52px]">
+    <footer className="footer  h-auto  md:px-[60px] px-4 bg-black py-[52px]">
       <div className="flex gap-5 h-full items-center">
         <p className="text-white text-[48px] font-semibold italic cursor-pointer">
           FILM.ID
